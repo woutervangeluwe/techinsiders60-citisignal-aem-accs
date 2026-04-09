@@ -95,7 +95,7 @@ export default async function decorate(block) {
     if (product.typename === 'ComplexProductView') {
       const button = document.createElement('div');
       UI.render(Button, {
-        children: labels.Global?.AddProductToCart ?? 'Add to Card',
+        children: labels.Global?.AddProductToCart ?? 'Add to Cart',
         icon: Icon({ source: 'Cart' }),
         href: getProductLink(product.urlKey, product.sku),
         variant: 'primary',
